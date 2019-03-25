@@ -1,0 +1,36 @@
+{
+  "name": "Simple",
+  "version": "1.0.0",
+  "description": "Simple Blockchain implementation in Javascript. For educational purposes only.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js",
+    "lint": "eslint src/**",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "Tony Ringston <calenge06@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplerings/simple"
+  },
+  "bugs": {
+    "url": "https://github.com/simplerings/simple/issues"
+  },
+  "homepage": "https://github.com/simplerings/simple",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "elliptic": "^6.4.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
